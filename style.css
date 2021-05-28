@@ -7,6 +7,50 @@
 body {
   height: 100vh;
   margin: 0;
-  overflow: hidden;
   font-family: 'Roboto', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+}
+
+.carousel {
+  box-shadow: 1.8px 1.8px 4.5px rgba(0, 0, 0, 0.27);
+  height: 530px;
+  width: 400px;
+  overflow: hidden;
+}
+
+.img-container {
+  display: flex;
+  transform: translateX(0);
+  transition: transform 0.66s ease-in-out;
+}
+
+.btns-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  background: slategray;
+  color: #fff;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  width: 49.5%;
+  font-weight: bold;
+}
+
+button:hover {
+  opacity: 0.88;
+}
+
+button:focus {
+  outline: none;
 }
